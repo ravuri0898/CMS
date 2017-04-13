@@ -1,0 +1,68 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/reset.css">
+        
+    <link rel="stylesheet" type="text/css" href="Semantic-UI-CSS-master/components/icon.css">
+        
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    
+    <!--The javascripts!-->
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="js/addInput.js"></script>
+    <script src="js/semantic.min.js"></script>
+</head>
+
+<body>
+
+    <!--The mail me modal starts here!-->
+    <div class="ui modal">
+        <div class="header">
+            Order
+        </div>
+            
+        <div class="content">
+            <div class="description" 
+                 style="margin: auto;">
+               
+                <!--TODO-->
+                <div class="ui form">
+                    <div class="three fields">
+                        <div class="field">
+                            <label>Select Item</label>
+                            <input type="text">
+                        </div>
+                    
+                        <div class="field">
+                            <label>Select Quantity</label>
+                            <input type="number">
+                        </div>
+                    
+                        <div class="field">
+                            <label>Price</label>
+                            <input type="number">
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 2.5vh;"
+                         class="ui red large submit button right floated">
+                        Send
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div><!--The mail me modal ends here!-->
+
+
+    <button class="ui massive red circular mail icon button" onclick="modal()">
+        <i class="add icon"></i>
+    </button>
+    
+    <div class="ui yellow large icon button" onclick="addInput()">
+        <i class="cart icon"></i>
+        Add Item
+    </div>
+    
+    <div class="ui divider"></div>
+    <div id="addInputDiv"></div>
+</body>
